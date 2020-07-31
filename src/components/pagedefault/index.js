@@ -1,6 +1,6 @@
 import React from 'react';
-import Menu from '../menu';
-import Footer from '../footer';
+import Menu from '../Menu';
+import Footer from '../Footer';
 import styled from 'styled-components';
 
 const Main = styled.main`
@@ -12,12 +12,13 @@ const Main = styled.main`
   padding-right: 5%;
 `;
 
-function PageDefault(props) {
+
+function PageDefault({ children }) {
   return (
     <>
       <Menu />
         <Main>
-          {props.children}
+          {children}
         </Main>
       <Footer />
     </>
